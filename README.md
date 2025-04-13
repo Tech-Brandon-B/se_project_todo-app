@@ -1,14 +1,14 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+The Todo App is made to be a todo list that has checkboxes next to each item and a due date if given and a name for said item
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+The Todo app has functioning checkboxes that can change from a true state to a false state. It also has functioning deletes buttons and has form validation. The app can also disable the submit button when adding the todo items if a required field is invalid.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+In the Todo App there are several instances of the 'this' method used and also uses of private and public methods in order to use less parameters and make the code less cluttered. There are imports and exports used as well to allow for modules to be used.
 
 ## Deployment
 
