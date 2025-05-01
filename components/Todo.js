@@ -4,7 +4,6 @@ class Todo {
     this._templateElement = document.querySelector(selector);
     this._handleCheck = handleCheck;
     this._handleDelete = handleDelete;
-    this._handleAdd = handleAdd;
   }
 
   _generateTodoDate() {
