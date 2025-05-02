@@ -2,6 +2,9 @@ class Popup {
   constructor({ popupSelector }) {
     this._popupElement = document.querySelector(popupSelector);
     this._popupCloseBtn = this._popupElement.querySelector(".popup__close");
+    this._dateInput = this._popupElement.querySelector(
+      ".popup__input_type_date"
+    );
     this._handleEscapeClose = this._handleEscapeClose.bind(this);
   }
 
@@ -30,6 +33,19 @@ class Popup {
         this.close();
       }
     });
+    this._setDateInputListener();
+  }
+
+  _setDateInputListener() {
+    if (this._dateInput) {
+      this._dateInput.addEventListener("click", () => {
+        this._dateInput.classList.add("popup__input_active");
+      });
+
+      this._dateInput.addEventListener("blur", () => {
+        this._dateInput.classList.remove("popup__input_active");
+      });
+    }
   }
 }
 export default Popup;
